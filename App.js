@@ -16,7 +16,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import ProductOverViewScreens from './screens/ProductOverViewScreens';
+import HomeScreens from './screens/HomeScreens';
 import DrawerApp from './navigation/navigation';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
