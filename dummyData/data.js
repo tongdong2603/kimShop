@@ -46,3 +46,15 @@ export const PRODUCTS = [
     80,
   ),
 ];
+
+export const fashion = [
+  'https://levica.vn/wp-content/uploads/2017/12/wechat-fashion-main.jpg',
+  'https://levica.vn/wp-content/uploads/2017/12/wechat-fashion-main.jpg',
+  'https://levica.vn/wp-content/uploads/2017/12/wechat-fashion-main.jpg',
+];
+
+export const products = [
+  'https://thumbs.dreamstime.com/z/fashion-shopping-girl-model-full-length-portrait-37402180.jpg',
+  'https://thumbs.dreamstime.com/z/fashion-shopping-girl-model-full-length-portrait-37402180.jpg',
+  'https://thumbs.dreamstime.com/z/fashion-shopping-girl-model-full-length-portrait-37402180.jpg',
+];

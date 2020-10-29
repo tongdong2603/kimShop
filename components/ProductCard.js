@@ -4,7 +4,7 @@ import {Card, Tile} from 'react-native-elements';
 
 const ActivityPrice = () => {
   return (
-    <View style={style.textContainer}>
+    <View>
       <Text style={style.title}>test</Text>
     </View>
   );

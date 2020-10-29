@@ -10,7 +10,7 @@ const AvatarComponent = (props) => {
         rounded
         size={60}
         icon={{name: 'home'}}
-        containerStyle={{backgroundColor: '#deeeff', height: 'auto'}}
+        containerStyle={{backgroundColor: '#deeeff'}}
       />
       <Text>Men</Text>
     </View>
@@ -21,7 +21,7 @@ const style = StyleSheet.create({
   avatar: {
     alignItems: 'center',
     margin: 10,
-    marginHorizontal: 20,
+    marginHorizontal: 10,
   },
 });
 
