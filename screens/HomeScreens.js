@@ -6,6 +6,7 @@ import AvatarComponent from '../components/Avatar';
 import ProductCard from '../components/ProductCard';
 import ProductCartVertical from '../components/ProductCartVertical';
 import ViewProduct from '../components/ViewProduct';
+import ShowAll from '../components/ShowAll';
 
 const HomeScreens = ({navigation}) => {
   return (
@@ -38,14 +39,33 @@ const HomeScreens = ({navigation}) => {
             keyExtractor={(item, index) => index.toString()}
           />
         </View>
-        <View style={{height: 'auto'}}>
-          <FlatList
-            data={products}
-            renderItem={ViewProduct}
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            keyExtractor={(item, index) => index.toString()}
-          />
+        <View>
+          <View style={{marginTop: 10}}>
+            <ShowAll></ShowAll>
+          </View>
+          <View style={{height: 400}}>
+            <FlatList
+              data={products}
+              renderItem={ViewProduct}
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              keyExtractor={(item, index) => index.toString()}
+            />
+          </View>
+        </View>
+        <View>
+          <View style={{marginTop: 10}}>
+            <ShowAll></ShowAll>
+          </View>
+          <View style={{height: 400}}>
+            <FlatList
+              data={products}
+              renderItem={ViewProduct}
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              keyExtractor={(item, index) => index.toString()}
+            />
+          </View>
         </View>
       </View>
     </ScrollView>

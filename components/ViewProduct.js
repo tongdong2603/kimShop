@@ -34,13 +34,16 @@ const style = StyleSheet.create({
   img: {
     width: '100%',
     height: '100%',
-    alignItems: 'center', //'flex-start' | 'flex-end' | 'center' | 'stretch' | 'space-between' | 'space-around'
+    alignItems: 'flex-end', //'flex-start' | 'flex-end' | 'center' | 'stretch' | 'space-between' | 'space-around'
   },
   resizeImg: {
-    width: 170,
-    height: 300,
+    width: '100%',
+    height: '90%',
   },
   card: {
+    flex: 1,
+    marginHorizontal: 10,
+    marginBottom: 30,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowRadius: 6,

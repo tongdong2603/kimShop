@@ -5,6 +5,7 @@ import HomeScreens from '../screens/HomeScreens';
 import ProductCard from '../components/ProductCard';
 import ProductCartVertical from '../components/ProductCartVertical';
 import ViewProduct from '../components/ViewProduct';
+import ShowAll from '../components/ShowAll';
 
 function HomeScreen({navigation}) {
   return (
@@ -21,7 +22,7 @@ const Drawer = createDrawerNavigator();
 
 export default function DrawerApp() {
   return (
-    <Drawer.Navigator initialRouteName="Home">
+    <Drawer.Navigator initialRouteName="Notifications">
       <Drawer.Screen name="Home" component={HomeScreens} />
       <Drawer.Screen name="Notifications" component={ViewProduct} />
     </Drawer.Navigator>
