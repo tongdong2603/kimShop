@@ -3,12 +3,16 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Icon} from 'react-native-elements';
 
 const ShowAll = (props) => {
+  const {navigation} = props;
   return (
     <View style={style.container}>
       <View style={style.wrapTitle}>
         <Text style={style.title}>Feature Products</Text>
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('Details');
+        }}>
         <View style={style.wrapSubTitle}>
           <Text style={style.subTitle}>Show All</Text>
           <Text style={style.subTitle}>></Text>

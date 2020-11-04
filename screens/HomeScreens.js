@@ -7,9 +7,11 @@ import ProductCard from '../components/ProductCard';
 import ProductCartVertical from '../components/ProductCartVertical';
 import ViewProduct from '../components/ViewProduct';
 import ShowAll from '../components/ShowAll';
+import {TabMaterialBottom} from '../navigation/navigation';
 
 const HomeScreens = ({navigation}) => {
   return (
+    //<TabMaterialBottom>
     <ScrollView>
       <View style={style.container}>
         <HeaderComponent openDrawer={navigation} />
@@ -41,7 +43,7 @@ const HomeScreens = ({navigation}) => {
         </View>
         <View>
           <View style={{marginTop: 10}}>
-            <ShowAll></ShowAll>
+            <ShowAll navigation={navigation} />
           </View>
           <View style={{height: 400}}>
             <FlatList
@@ -69,6 +71,7 @@ const HomeScreens = ({navigation}) => {
         </View>
       </View>
     </ScrollView>
+    //</TabMaterialBottom>
   );
 };
 
