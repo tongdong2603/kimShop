@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Button, View} from 'react-native';
+import {Button, View, Text} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
@@ -25,10 +25,20 @@ const TabMaterialBottom = (props) => {
 
 const StackProducts = () => {
   return (
-    <Stack.Navigator>
-      <Tab.Screen name="Home" component={HomeScreens} />
-      <Tab.Screen name="ProductsList" component={ProductsListScreens} />
-      <Tab.Screen name="Details" component={ProductDetailScreens} />
+    <Stack.Navigator
+      headerMode="none"
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }}>
+      <Stack.Screen name="Home" component={HomeScreens} />
+      <Stack.Screen name="ProductsList" component={ProductsListScreens} />
+      <Stack.Screen name="Details" component={ProductDetailScreens} />
     </Stack.Navigator>
   );
 };
